@@ -47,7 +47,7 @@ ul {
 }
 
 .girl-image {
-  margin: 10px;
+  margin-left: 10px;
   object-fit: cover;
   height: 50px;
 }
@@ -293,6 +293,9 @@ footer {
   .contact-item {
     font-size: 25px;
   }
+  .copywrite {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -302,9 +305,6 @@ footer {
   }
   .project-name {
     font-size: 25px;
-  }
-  .copywrite {
-    text-align: center;
   }
 }
 

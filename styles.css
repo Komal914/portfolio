@@ -35,12 +35,21 @@ ul {
   top: 0;
   right: 0;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-items {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.girl-image {
+  margin: 10px;
+  object-fit: cover;
+  height: 50px;
 }
 
 .navbar-item {
@@ -79,11 +88,11 @@ nav a {
   text-align: center;
   font-size: 30px;
   font-family: Quicksand;
-  padding-top: 20px;
+  margin-top: 40px;
 }
 
 .welcome-quote {
-  margin-top: 50px;
+  margin-top: 80px;
   color: var(--green);
   padding: 20px;
   text-align: center;
@@ -100,18 +109,18 @@ nav a {
     var(--blue) 80%,
     var(--green) 100%
   );
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .divider {
   height: 2px;
   width: 60%;
   background-color: var(--black);
-  margin: 0px auto 40px auto;
+  margin: 0px auto 50px auto;
 }
 
 .project-heading {
-  padding: 50px 20px 0px 20px;
+  padding: 100px 0px 20px 0px;
   text-align: center;
   font-size: 40px;
   color: var(--black);
@@ -121,7 +130,7 @@ nav a {
 .project-tiles {
   display: grid;
   grid-template-columns: 1fr, 3fr, 3fr, 3fr, 1fr;
-  gap: 40px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
 }

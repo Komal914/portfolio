@@ -10,10 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <title>Komal Kaur Personal Portfolio Webpage</title>
+    <title>Komal Kaur Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
   </head>
   <body>
     <nav id="navbar">
+      <img class="girl-image" src="./images/girl.png" />
       <div class="navbar-items">
         <a class="navbar-item" href="#welcome-section">About</a>
         <a class="navbar-item" href="#projects">Work</a>
@@ -21,9 +23,9 @@
       </div>
     </nav>
     <section id="welcome-section">
-      <h1 class="welcome-greeting">Hey, I am Komal</h1>
-      <p class="welcome-title">a web developer</p>
-      <h2 class="welcome-quote">"failure is the way forward"</h2>
+      <h1 id="welcome-greeting" class="welcome-greeting">Hey, I am Komal</h1>
+      <p id="welcome-title" class="welcome-title">a web developer</p>
+      <h2 id="welcome-quote" class="welcome-quote"></h2>
     </section>
 
     <section id="projects">
@@ -148,5 +150,12 @@
       <div class="divider-two"></div>
       <p class="copywrite">Created with love @ 2023 Komalpreet Kaur</p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#welcome-quote", {
+        strings: ["failure is the way forward"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>

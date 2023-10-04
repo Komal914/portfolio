@@ -219,11 +219,13 @@ nav a {
   padding: 20px;
   font-style: bold;
   font-size: 40px;
+  animation: moveDown 2s ease-in-out infinite;
   color: var(--yellow);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .contact-item:hover {
-  animation: moveDown 2s ease-in-out;
+  animation: none;
   color: var(--green);
 }
 
@@ -331,7 +333,13 @@ footer {
   50% {
     transform: translateY(-2px);
   }
-  100% {
+  75% {
     transform: translateY(-4px);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

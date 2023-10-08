@@ -36,7 +36,7 @@
       <div class="divider"></div>
       <div class="project-tiles">
         <a
-          class="project-link project-tile one"
+          class="project-link project-tile one reveal"
           href="https://github.com/freeCodeCamp/classroom"
           target="_blank"
         >
@@ -51,7 +51,7 @@
           </h2>
         </a>
         <a
-          class="project-link project-tile two"
+          class="project-link project-tile two reveal"
           href="https://komal914.github.io/GridMaker/index.html"
           target="_blank"
         >
@@ -66,7 +66,7 @@
           </h2>
         </a>
         <a
-          class="project-link project-tile three"
+          class="project-link project-tile three reveal"
           href="https://komal914.github.io/smartBrain/"
           target="_blank"
         >
@@ -81,7 +81,7 @@
           </h2>
         </a>
         <a
-          class="project-link project-tile four"
+          class="project-link project-tile four reveal"
           href="https://coachfinder-fc75c.web.app/coaches"
           target="_blank"
         >
@@ -98,7 +98,7 @@
           </h2>
         </a>
         <a
-          class="project-link project-tile five"
+          class="project-link project-tile five reveal"
           href="https://github.com/Komal914/MoMaps"
           target="_blank"
         >
@@ -113,7 +113,7 @@
           </h2>
         </a>
         <a
-          class="project-link project-tile six"
+          class="project-link project-tile six reveal"
           href="https://github.com/Komal914/CookBook"
           target="_blank"
         >
@@ -155,10 +155,28 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#welcome-quote", {
+      //type words
+      let typed = new Typed("#welcome-quote", {
         strings: ["it's growth that generates happiness"],
         typeSpeed: 50,
       });
+
+      //scroll appear
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        let reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let revealTop = reveals[i].getBoundingClientRect().top;
+          let revealPoint = 100;
+
+          if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
     </script>
   </body>
 </html>

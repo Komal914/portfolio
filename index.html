@@ -154,29 +154,6 @@
       <p class="copywrite">Created with love @ 2023 Komalpreet Kaur</p>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      //type words
-      var typed = new Typed("#welcome-quote", {
-        strings: ["it's growth that generates happiness"],
-        typeSpeed: 50,
-      });
-
-      //scroll appear
-      window.addEventListener("scroll", reveal);
-      function reveal() {
-        let reveals = document.querySelectorAll(".reveal");
-        for (let i = 0; i < reveals.length; i++) {
-          let windowHeight = window.innerHeight;
-          let revealTop = reveals[i].getBoundingClientRect().top;
-          let revealPoint = 100;
-
-          if (revealTop < windowHeight - revealPoint) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-    </script>
+    <script src="./animations.js"></script>
   </body>
 </html>

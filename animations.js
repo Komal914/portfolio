@@ -1,8 +1,36 @@
 //type words
-var typed = new Typed("#welcome-quote", {
-  strings: ["it's growth that generates happiness"],
-  typeSpeed: 50,
-});
+
+function name() {
+  var typed = new Typed("#welcome-greeting", {
+    strings: ["Hey, I am Komal"],
+    typeSpeed: 40,
+  });
+  return typed;
+}
+
+function title() {
+  setTimeout(() => {
+    var typed = new Typed("#welcome-title", {
+      strings: ["a web developer"],
+      typeSpeed: 40,
+    });
+    return typed;
+  }, "1000");
+}
+
+function quote() {
+  setTimeout(() => {
+    var typed = new Typed("#welcome-quote", {
+      strings: ["its growth that generates happiness"],
+      typeSpeed: 40,
+    });
+    return typed;
+  }, "2000");
+}
+
+name();
+title();
+quote();
 
 //scroll appear
 window.addEventListener("scroll", reveal);

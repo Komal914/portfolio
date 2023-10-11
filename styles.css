@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  background-color: var(--black);
   font-family: sans-serif;
   overflow-x: clip;
   min-height: 100%;
@@ -81,7 +82,6 @@ nav a {
   text-align: center;
   height: 100vh;
   width: 100%;
-  background-color: var(--black);
 }
 .welcome-greeting {
   padding-top: 180px;
@@ -112,20 +112,13 @@ nav a {
 }
 
 #projects {
-  background: linear-gradient(
-    90deg,
-    var(--green) 0%,
-    var(--blue) 20%,
-    var(--blue) 80%,
-    var(--green) 100%
-  );
   padding-bottom: 100px;
 }
 
 .divider {
   height: 2px;
   width: 60%;
-  background-color: var(--black);
+  background-color: var(--pink);
   margin: 0px auto 50px auto;
 }
 
@@ -133,7 +126,7 @@ nav a {
   padding: 100px 0px 40px 0px;
   text-align: center;
   font-size: 40px;
-  color: var(--black);
+  color: var(--yellow);
   font-family: "Roboto Mono";
 }
 
@@ -215,7 +208,6 @@ nav a {
 }
 
 #contact {
-  background-color: var(--black);
   padding: 50px;
 }
 
@@ -255,7 +247,6 @@ nav a {
 footer {
   width: 100%;
   height: 80px;
-  background-color: var(--black);
 }
 
 .copywrite {

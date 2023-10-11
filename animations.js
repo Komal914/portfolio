@@ -21,8 +21,10 @@ function title() {
 function quote() {
   setTimeout(() => {
     var typed = new Typed("#welcome-quote", {
-      strings: ["its growth that generates happiness"],
-      typeSpeed: 40,
+      strings: [
+        "I am a passionate learner who enjoys creating beautiful user interfaces. With expertise in open-source contribution, front-end development, code review, and peer programming.",
+      ],
+      typeSpeed: 20,
     });
     return typed;
   }, "2000");

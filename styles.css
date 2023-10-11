@@ -98,17 +98,12 @@ nav a {
 }
 
 .welcome-quote {
-  margin: 1em 8em;
+  margin-top: 40px;
   color: var(--green);
   padding: 20px;
   font-weight: 1px;
   font-family: Quicksand;
   font-size: 2.5em;
-}
-
-.flying-quote {
-  height: 12rem;
-  width: 100%;
 }
 
 #projects {
@@ -119,11 +114,11 @@ nav a {
   height: 2px;
   width: 60%;
   background-color: var(--pink);
-  margin: 0px auto 50px auto;
+  margin: 0px auto 10em auto;
 }
 
 .project-heading {
-  padding: 100px 0px 40px 0px;
+  padding: 1em 0px 1em 0px;
   text-align: center;
   font-size: 40px;
   color: var(--yellow);

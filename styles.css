@@ -84,7 +84,7 @@ nav a {
   width: 100%;
 }
 .welcome-greeting {
-  padding-top: 180px;
+  padding-top: 2.5em;
   color: var(--yellow);
   font-size: 8em;
   font-family: "Roboto Mono";
@@ -101,9 +101,22 @@ nav a {
   margin-top: 40px;
   color: var(--green);
   padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 1px;
   font-family: Quicksand;
   font-size: 2.5em;
+  animation: fade-in 3s ease-in;
+}
+
+/*fade in quote */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #projects {
@@ -271,11 +284,11 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .welcome-greeting {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .welcome-title {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .welcome-quote {

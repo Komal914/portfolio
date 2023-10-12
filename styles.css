@@ -101,12 +101,13 @@ nav a {
   margin-top: 40px;
   color: var(--green);
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 4em;
+  margin-right: 4em;
   font-weight: 1px;
   font-family: Quicksand;
   font-size: 2.5em;
   animation: fade-in 3s ease-in;
+  overflow: clip;
 }
 
 /*fade in quote */
@@ -133,7 +134,7 @@ nav a {
 .project-heading {
   padding: 1em 0px 1em 0px;
   text-align: center;
-  font-size: 40px;
+  font-size: 6em;
   color: var(--yellow);
   font-family: "Roboto Mono";
 }
@@ -222,7 +223,7 @@ nav a {
 #contact h1 {
   text-align: center;
   color: var(--pink);
-  font-size: 40px;
+  font-size: 5em;
   margin-bottom: 20px;
   font-family: "Roboto Mono";
 }
@@ -235,7 +236,7 @@ nav a {
 .contact-item {
   padding: 20px;
   font-style: bold;
-  font-size: 40px;
+  font-size: 5em;
   animation: moveDown 2s ease-in-out infinite;
   color: var(--yellow);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -284,6 +285,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .welcome-greeting {
+    margin-top: 1.5em;
     font-size: 50px;
   }
 
@@ -293,10 +295,12 @@ footer {
 
   .welcome-quote {
     font-size: 25px;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   .project-heading {
-    font-size: 30px;
+    font-size: 4em;
     margin: 0px 10px;
   }
 
@@ -318,6 +322,9 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+  .welcome-greeting {
+    margin-top: 0.5em;
+  }
   .project-tile {
     height: 350px;
     width: 400px;
